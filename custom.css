@@ -1,0 +1,20 @@
+.btn-success2 {
+    color: #fff;
+    background-color: #0008;
+    border-color: #0008;
+}
+
+element.style {
+    border-top-width: 10px;
+    padding-top: 1px;
+    margin-top: 10px;
+}
+
+h3.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: blue;
+    align-items: center;
+  justify-content: center
+}

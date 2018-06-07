@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="captiveportal-bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="captiveportal-custom.css">
+  <style type="text/css">
+    body {
+      background: url(captiveportal-back.jpg);
+      background-color: #444;
+     
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  
+    }
+    .vertical-offset-100 {
+      padding-top:100px;
+    }    
+  </style>
+  <script src="captiveportal-jquery-1.11.1.min.js"></script>
+  <script src="captiveportal-bootstrap.min.js"></script>
+</head>
+<body>
+  <script src="captiveportal-tweenlite.min.js"></script>
+
+  <div class="container">
+    <div class="row vertical-offset-100">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Acesso Wi-Fi - Rede Alunos</h3>
+          </div>
+          <div class="panel-body">
+            <form method="post" action="$PORTAL_ACTION$" accept-charset="UTF-8" role="form">
+              <fieldset>
+                <!-- Required input boxes for portal page to work. Only required if user authentication is needed. -->
+                <p><h4>Você está se conectando na rade Wi-Fi, verifique algumas instruções de acesso:</h4></p>
+                <ul>
+
+               <h5><b>Acesso:</b></h5>
+                  <li>As credenciais de acesso são da Base Centralizada, tendo como usuário o CPF e a senha cadastrada;</li>
+                  <li>Alunos poderão se cadastrar pelo botão logo abaixo;</li>
+                  <li>Um pop-up aparecerá para digitar as credenciais;</li>
+                <h5><b>Problemas de conexão:</b></h5>
+                  <li>Se não aparecer o pop-up, esqueça a rede no celular;</li>
+                  <li>Se por algum motivo perder o acesso digite:<a href="http://acessowifi.quixada.ufc.br"> http://acessowifi.quixada.ufc.br</a> ;</li>
+
+                <h5><b>Observe as Polícicas de Uso:</b></h5>
+                  <li><a href="#" data-toggle="modal" data-target="#exampleModalLong">Políticas de Uso</a></li>   
+                    
+                </ul>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Políticas de Uso</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+
+                      <ul>
+                         <b>Não é permitido:</b>
+                         <br><br>
+                        <li>Download de músicas, jogos, filmes, programas etc.;</li>
+                        <li>Utilização de meios alternativos para burlar o sistema de controle de acesso a
+                        Internet da instituição;</li>
+                        <li>Acesso a sites com conteúdo impróprio, pornográficos e afins;</li>
+                        <li>Utilização de programas de downloads P2P, como Limewire, Kazaa, Ares, Emule,
+                        uTorrent, biTorrent, entre outros;</li>
+                        <li>Ligação de aparelhos a fim de redistribuir o acesso à rede wireless a terceiros;</li>
+                        <li>Se fazer passar por outra pessoa ou dissimular sua identidade quando utilizar os
+                        recursos computacionais.</li>
+
+                        <br>
+                        <b>Considera-se violação das regras o seguinte:</b>
+                        <br>
+                        <br>
+                        <li>Divulgar sua conta de usuário e sua senha de acesso para qualquer pessoa. Estas
+                        informações são de caráter pessoal e intransferível.</li>
+                        <li>Utilizar o serviço para fins ilícitos e proibidos.</li>
+                        <li>Utilizar o serviço para transmitir ou divulgar material ilícito, proibido ou
+                        difamatório que viole a privacidade de terceiros, ou que seja abusivo, ameaçador,
+                        discriminatório, injurioso ou calunioso.</li>
+                        <li>Acessar conteúdo pornográfico e jogos on-line.</li>
+                        <li>Utilizar o serviço para transmitir/divulgar material que incentive discriminação ou
+                        violência.</li>
+                        <li>Transmitir e/ou divulgar qualquer material que viole direitos de terceiros, incluindo
+                        direitos de propriedade intelectual.</li>
+                        <li>Obter ou tentar obter acesso não-autorizado a outros sistemas ou redes de
+                        computadores conectados ao serviço.</li>
+                        <li>Interferir ou interromper o serviço, as redes ou os servidores conectados ao serviço.</li>
+                        <li>Usar de falsa identidade ou utilizar dados de terceiros para obter acesso ao serviço.</li>
+                        <li>Tentar enganar ou subverter as medidas de segurança dos sistemas e da rede de
+                        comunicação.</li>
+                        <li>Utilizar o serviço para intimidar, assediar, difamar ou aborrecer qualquer pessoa.</li>
+                        <li>Utilizar serviço de proxy para burlar sites com acesso não autorizado.</li>
+                        <li>Mostrar, armazenar ou transmitir texto, imagens ou sons que possam ser
+                        considerados ofensivos ou abusivos.</li>
+                        <li>Utilizar o acesso à internet para instigar, ameaçar ou ofender, abalar a imagem,
+                        invadir a privacidade ou prejudicar outros membros da comunidade Internet.</li>
+                        <li>Acessar sites pornográficos ou quaisquer outros sites que seu conteúdo não seja
+                        informativo ou educacional.</li>
+                      </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="form-group">
+                  <input name="auth_user" type="text" placeholder="CPF" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input name="auth_pass" type="password" placeholder="Senha" class="form-control">
+                </div>
+                <input name="redirurl" type="hidden" value="captiveportal-success.html">
+                <input class="btn btn-lg btn-success btn-block" name="accept" type="submit" value="Acessar">
+               <!-- <a href="https://cadastroaluno.quixada.ufc.br/" target="self"> <input class="btn btn-lg btn-success2 btn-block" name="Cadastre-se" value="Cadastre-se - Alunos" style="margin-top: 10px"></a>-->
+              </fieldset>
+            </form>
+
+
+
+            <button class="btn btn-lg btn-success btn-block" style="margin-top: 10px;" data-toggle="modal" data-target="#myModal">Cadastre-se - Alunos</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                      </div>
+                      <div class="modal-body" style="height: 700px;">
+                          <iframe src="https://cadastroaluno.quixada.ufc.br/" width="100%" height="100%" frameborder="0" allowtransparency="true"></iframe>  
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                    <!-- /.modal-content -->
+                  </div>
+                  <!-- /.modal-dialog -->
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
